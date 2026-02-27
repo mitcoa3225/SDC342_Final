@@ -84,8 +84,7 @@ class UserDB {
 
     /**
      * Validate login credentials.
-     * NOTE: PHP 7.4 does not support union return types, so we use a phpdoc.
-     *
+     * 
      * @return int|false Returns the UserLevelNo on success, or false on failure.
      */
     public static function validateLogin(Database $db, string $userId, string $password) {
